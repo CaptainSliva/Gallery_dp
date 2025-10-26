@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listAlbumsFragment">
+
+    <fragment
+        android:id="@+id/listAlbumsFragment"
+        android:name="com.example.gallery_dp.ListAlbums.ListAlbumsFragment"
+        android:label="@string/albums"
+        tools:layout="@layout/list_albums_fragment">
+        <action
+            android:id="@+id/action_listAlbumsFragment_to_listPicturesFragment"
+            app:destination="@id/listPicturesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listPicturesFragment"
+        android:name="com.example.gallery_dp.ListPictures.ListPicturesFragment"
+        android:label="@string/all_photos"
+        tools:layout="@layout/list_pictures_fragment" >
+        <action
+            android:id="@+id/action_listPicturesFragment_to_fullscreenMediaFragment"
+            app:destination="@id/fullscreenMediaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fullscreenMediaFragment"
+        android:name="com.example.gallery_dp.FullscreenMediaFragment"
+        android:label="fragment_fullscreen_media"
+        tools:layout="@layout/fragment_fullscreen_media" />
+
+
+</navigation>
