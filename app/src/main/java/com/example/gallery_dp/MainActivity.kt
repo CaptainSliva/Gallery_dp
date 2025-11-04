@@ -9,8 +9,9 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
-import com.example.gallery_dp.Permissions.RequestPermissions
+import com.example.gallery_dp.data.mainContext
 import com.example.gallery_dp.databinding.ActivityMainBinding
+import com.example.gallery_dp.permissions.RequestPermissions
 
 class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration

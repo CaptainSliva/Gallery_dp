@@ -7,7 +7,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".Dialogs.CreateAlbumDialogFragment"
+    tools:context=".dialogs.CreateAlbumDialogFragment"
     android:gravity="center">
 
     <com.google.android.material.textview.MaterialTextView
@@ -28,6 +28,7 @@
         android:layout_height="wrap_content"
         android:maxLength="80"
         android:hint="@string/album_name"
+        android:singleLine="true"
         android:background="@drawable/blue_border"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"

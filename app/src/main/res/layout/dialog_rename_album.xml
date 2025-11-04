@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    tools:context=".Dialogs.RenameAlbumDialogFragment"
+    tools:context=".dialogs.RenameAlbumDialogFragment"
     android:padding="16dp"
     android:gravity="center">
 
@@ -28,6 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:maxLength="80"
+        android:singleLine="true"
         android:background="@drawable/blue_border"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
