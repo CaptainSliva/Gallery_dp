@@ -7,7 +7,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".Dialogs.AddCommentDialogFragment"
+    tools:context=".dialogs.AddCommentDialogFragment"
     android:gravity="center">
 
     <com.google.android.material.textview.MaterialTextView
@@ -40,20 +40,18 @@
         android:id="@+id/b_neg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:textColor="?attr/textColorAlertDialogListItem"
         android:text="@string/neg_b"
+        android:textColor="?attr/textColorAlertDialogListItem"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/album_name_text" />
+        app:layout_constraintTop_toBottomOf="@+id/comment_photo_text" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/b_pos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:text="@string/save"
         android:textColor="@color/light_blue_600"
-        android:text="@string/pos_b"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/album_name_text" />
+        app:layout_constraintTop_toBottomOf="@+id/comment_photo_text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
